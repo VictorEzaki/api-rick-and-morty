@@ -1,7 +1,7 @@
 import './styles.css'
 import rick from './../../assets/rick.png'
 import morty from './../../assets/image.png'
-import justin from './../../assets/Justin.jpg'
+import justin from './../../assets/justin.jpg'
 import james from './../../assets/james.webp'
 
 export default function Home(){
