@@ -1,14 +1,18 @@
 #main-characters{
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 3rem;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    gap: 2rem;
+    width: 100%;
 }
 
 #api-content{
     width: 60%;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
     gap: 3rem;
