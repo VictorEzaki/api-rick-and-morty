@@ -2,10 +2,11 @@ import { useEffect, useState } from 'react'
 import './styles.css'
 import CardCharacter from '../../components/CardCharacters';
 import Pagination from '../../components/Pagination';
+import Filter from '../../components/Filter';
 
 export default function Characters() {
     const [conteudo, setConteudo] = useState(<>Carregando...</>);
-    const [busca, setBusca] = useState('');
+    const [busca, setBusca] = useState(1);
     const [page, setPage] = useState(1);
     const [totalPages, setTotalPages] = useState(1);
 
@@ -48,6 +49,11 @@ export default function Characters() {
     return (
         <>
             <main id="main-characters">
+                <Filter
+                    busca={busca}
+                    setBusca={setBusca}
+                />
+
                 <Pagination
                     page={page}
                     totalPages={totalPages}
