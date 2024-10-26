@@ -1,0 +1,5 @@
+#episodes{
+    display: flex;
+    gap: 2rem;
+    padding: 6rem;
+}
