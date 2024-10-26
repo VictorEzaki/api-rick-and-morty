@@ -23,14 +23,14 @@ export default function Filter({ busca, setBusca }) {
                 </div>
                 <div id="filter">
                     <input type="text" placeholder='Filtre por nome' onInput={(event) => buildFilter('name', event.target.value)} />
-                    <select name="status" onChange={(event) => buildFilter('status', event.target.value)}>
+                    <select id='filter-character' name="status" onChange={(event) => buildFilter('status', event.target.value)}>
                         <option disabled>Status</option>
                         <option value="">Todos</option>
                         <option value="alive">Vivo</option>
                         <option value="dead">Morto</option>
                         <option value="unknown">Desconhecido</option>
                     </select>
-                    <select name="gender" onChange={(event) => buildFilter('gender', event.target.value)}>
+                    <select id='filter-character' name="gender" onChange={(event) => buildFilter('gender', event.target.value)}>
                         <option disabled>Gênero</option>
                         <option value="">Todos</option>
                         <option value="female">Feminino</option>
@@ -38,7 +38,7 @@ export default function Filter({ busca, setBusca }) {
                         <option value="genderless">Sem gênero</option>
                         <option value="unknown">Desconhecido</option>
                     </select>
-                    <select name="specie" onChange={(event) => buildFilter('species', event.target.value)}>
+                    <select id='filter-character' name="specie" onChange={(event) => buildFilter('species', event.target.value)}>
                         <option disabled>Espécie</option>
                         <option value="">Todos</option>
                         <option value="human">Humano</option>
