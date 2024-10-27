@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react'
 import './styles.css'
 import CardEpisodes from '../../components/CardEpisodes'
 import FilterEpisode from '../../components/FilterEpisode'
+import { Swiper, SwiperSlide } from 'swiper/react'
 
 export default function Episodes() {
     const [conteudo, setConteudo] = useState(<>Carregando...</>)
@@ -30,7 +31,17 @@ export default function Episodes() {
     async function buildEpisode() {
         const { epi: episodes } = await getEpisodes()
 
-        return episodes.map(episode => <CardEpisodes data={episode} />)
+        return <Swiper
+            slidesPerView={1}
+            navigation={true}
+            width={350}
+        >
+            {episodes.map((episode) => (
+                <SwiperSlide>
+                    <CardEpisodes data={episode} />
+                </SwiperSlide>
+            ))}
+        </Swiper>
     }
 
     useEffect(() => {

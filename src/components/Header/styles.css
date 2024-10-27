@@ -53,3 +53,22 @@
     transition-duration: 400ms;
     transition-property: width, left;
 }
+
+@media(max-width: 650px){
+    #header-container{
+        flex-direction: column;
+        height: 10rem;
+        padding: 2rem;
+    }
+}
+
+@media(max-width: 300px){
+    #header-container{
+        width: 100%;
+        height: 20rem;
+    }
+
+    #header-container #nav{
+        flex-direction: column;
+    }
+}
