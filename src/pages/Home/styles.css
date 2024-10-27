@@ -76,14 +76,17 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 100%;
+    padding-bottom: 6rem;
 }
 
 #container{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
-    width: 100rem;
-    height: 60rem;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 3rem;
 }
 
 .create {
@@ -111,4 +114,59 @@
 
 .create .text-create{
     font-size: 1.3rem;
+}
+
+@media(max-width: 1200px){
+    #home-container #rick{
+        height: 30rem;
+    }
+
+    #home-container #text #sinopse{
+        width: 20rem;
+    }
+
+    #home-container #text #sinopse h1{
+        font-size: 4rem;
+    }
+
+    #home-container #text #button-watch img{
+        width: 10rem;
+    }
+
+    #home-container #text #button-watch a{
+        width: 15rem;
+        font-size: 2rem;
+        text-align: center;
+    }
+}
+
+@media(max-width: 800px){
+    #home-container #rick{
+        height: 20rem;
+    }
+
+    #home-container #text #sinopse h1{
+        font-size: 2rem;
+    }
+
+    #home-container #text #button-watch img{
+        width: 10rem;
+    }
+
+    #home-container #text #button-watch a{
+        width: 15rem;
+        font-size: 2rem;
+        text-align: center;
+    }
+}
+
+@media(max-width: 550px){
+    #home-container{
+        flex-direction: column;
+    }
+
+    .create{
+        width: 10rem;
+        height: 35rem;
+    }
 }

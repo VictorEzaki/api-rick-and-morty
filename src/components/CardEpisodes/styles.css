@@ -1,0 +1,24 @@
+#card-episode{
+    display: flex;
+    flex-direction: column;
+    width: 35rem;
+    gap: 1rem;
+    padding-bottom: 1rem;
+    border-radius: 1rem;
+    background-color: #e0e0e0;
+    box-shadow: 0 6px 16px #bebebe;
+}
+
+#card-episode img{
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+}
+
+#card-episode #name-episode{
+    font-size: 1.6rem;
+}
+
+#card-episode .card-infos{
+    padding-left: 1rem;
+    font-size: 1.3rem;
+}

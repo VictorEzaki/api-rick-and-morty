@@ -1,0 +1,12 @@
+#filter-episode{
+    padding-left: 6rem;
+}
+
+#filter-season{
+    border-top-left-radius: 0.3rem;
+    width: 22rem;
+    height: 3rem;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid #bebebe;
+}

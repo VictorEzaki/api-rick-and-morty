@@ -17,3 +17,9 @@
     flex-wrap: wrap;
     gap: 3rem;
 }
+
+@media(max-width: 800px){
+    #api-content{
+        justify-content: center;
+    }
+}

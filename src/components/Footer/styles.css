@@ -3,6 +3,7 @@
     box-shadow: 1px 1px 8px rgb(194, 194, 194),
         -1px -1px 6px rgba(194, 194, 194);
     padding: 1rem;
+    width: auto;
 }
 
 #footer, #contact{
