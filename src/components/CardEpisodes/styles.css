@@ -1,7 +1,7 @@
 #card-episode{
     display: flex;
     flex-direction: column;
-    width: 25rem;
+    width: 35rem;
     gap: 1rem;
     padding-bottom: 1rem;
     border-radius: 1rem;

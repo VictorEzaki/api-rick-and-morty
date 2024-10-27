@@ -1,11 +1,23 @@
 #main-episodes{
     display: flex;
     flex-direction: column;
-    padding: 6rem;
     gap: 3rem;
 }
 
 #episodes {
     display: flex;
     gap: 2rem;
+}
+
+.swiper{
+    height: 30rem;
+}
+
+.swiper-slide{
+    padding-left: 6rem;
+    padding-right: 6rem;
+}
+
+.swiper-button-prev, .swiper-button-next{
+    color: #08C952 !important;
 }
